@@ -12,23 +12,122 @@
         <script src="js/main.js"></script>
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
         <style>
-            div.about {
-               background-color: #cebac9;              
-
+             *, *:after, *:before {
+                box-sizing: border-box;
             }
+            div.video {
+                float: right;
+                margin: 0 0 20px 20px;
+            }
+            
+            div.bio {
+                background-color:#616362;
+                color: #FFFFFF;
+                border:groove;
+                border-color:#ffae19;
+                padding:10px;
+                clear: both;
+                margin-bottom: 10px;
+            }
+            
+            .container {
+                width: 940px;
+                margin-right: auto;
+                margin-left: auto;
+            }
+            
+            .row:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+            
+            [class*='col-'] {
+                float: left;
+                padding-right: 20px;
+            }
+            
+            [class*='col-']:last-of-type {
+                padding-right: 0px;
+            }
+            
+            .col-1-3 {
+                width: 33.33333%;
+            }
+            
             div.bio {
                 background-color: #9bb7a7;
             }
-            div.course {
-                background-color: #e5a470;
-            }                  
         </style>   
-        
         
     </head>
     <body>
-        <div class="about">About the agriculture program</div>
-        <div class="bio">bio for staff</div>
-        <div class="course">course description for the agriculture program</div>    
+        <div class="container">
+            <div class="row">
+                <h3><u><em>About our Agricultural Leadership Program</em></u></h3>
+                
+                <div class="video">
+                    <video width="400" controls>
+                        <source src="vid/AGRICULTURE.m4v" type="video/mp4">
+                        <source src="vid/AGRICULTURE.webm" type="video/webm">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                
+                <p>
+                    Agricultural Science Education uses a three-circle model of instruction. These models are classroom and laboratory
+                    instruction, and experiential learning. The successful integration of each of these three components with the hands
+                    on teaching model results in a strong program that produces well rounded individuals who are prepared to be leaders
+                    in agriculture, business, and all professional industries.
+                </p>
+                
+                <p>
+                    M.A.S.A is a rigorous applied science program that instructs students about plants, food production, floral design,
+                    greenhouse management, animals, natural resources, nutrition and much more. Throughout the program students are also
+                    taught a wide variety of employable skills, including but not limited to verbal and written communications skills,
+                    leadership skills, and management/technology skills for future internships and possible employment.
+                </p>                
+            </div>
+            
+            <div class="bio">
+                bio for staff
+            </div>
+            
+            <div class="row">
+                <h3>Agricultural Leadership</h3>
+                <div class="col-1-3">
+                    <h4>First Year: Agriculture Science 1</h4>
+                    <p>
+                        This one-year course introduces students to the field of agriculture science. Areas of study include animal science,
+                        veterinary medicine, plant science, floriculture, horticulture, natural resource, and wildlife management. Instructional
+                        practices incorporate integration of diversity awareness including appreciation of all cultures and their important contributions
+                        to society. The appropriate use of technology is an integral part of this course. This course fulfills one of the elective credits
+                        required for high school graduation.
+                    </p>
+                </div>
+                    
+                <div class="col-1-3">
+                    <h4>Second Year: Agriculture Science 2</h4>
+                    <p>
+                        This one-year is designed for students who have successfully completed Agriculture Science I. Areas of study include
+                        plant and soil science, agriculture business, animal science, and natural resource management. Instructional practices
+                        incorporate integration of diversity awareness including appreciation of all cultures and their important contributions
+                        to society. The appropriate use of technology is an integral part of this course. This course fulfills one of the elective
+                        credits required for high school graduation.
+                    </p>
+                </div>
+                    
+                <div class="col-1-3">
+                    <h4>Third Year: Agriculture Leadership</h4>
+                    <p>
+                        This one-year course is designed for students who have successfully completed Agriculture Science II. Areas of study provide
+                        the student with the information and skills necessary for success in agribusiness and in operating entrepreneurial ventures in
+                        the agricultural industry. Instructional practices incorporate integration of diversity awareness including appreciation of all
+                        cultures and their important contributions to society. The appropriate use of technology is an integral part of this course. This
+                        course fulfills one of the elective credits required for high school graduation.
+                    </p>
+                </div> 
+            </div>
+        </div>
     </body>
 </html>
