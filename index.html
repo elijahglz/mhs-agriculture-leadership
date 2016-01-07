@@ -20,18 +20,8 @@
                 margin: 0 0 20px 20px;
             }
             
-            div.bio {
-                background-color:#616362;
-                color: #FFFFFF;
-                border:groove;
-                border-color:#ffae19;
-                padding:10px;
-                clear: both;
-                margin-bottom: 10px;
-            }
-            
             .container {
-                width: 940px;
+                width: 800px;
                 margin-right: auto;
                 margin-left: auto;
             }
@@ -55,47 +45,148 @@
                 width: 33.33333%;
             }
             
-            div.bio {
-                background-color: #9bb7a7;
+            section {
+                margin-bottom: 40px;
             }
+            
+            .bio {
+                background-color:#616362;
+                color: #FFFFFF;
+                border: 3px groove #ffae19;
+                padding: 20px;
+                margin-bottom: 60px;
+                position: relative;
+            }
+            
+            .bio:last-of-type {
+                margin-bottom: 0;
+            }
+            
+            .bio h3 {
+                margin-top: 0;
+            }    
+            
+            p {
+                margin-top: 0;
+                margin-bottom: 22px;
+            }
+            
+            p:last-of-type {
+                margin-bottom: 0;
+            }
+            
+            h2 {
+                font-style: italic;
+            }
+                        .nav ul {
+                list-style-type: none;
+                margin-top: 10px;
+                padding: 0;
+                overflow: hidden;
+                background-color: #00FFFFFFF;
+                text-align: center;
+            }
+
+            .nav li {
+                display: inline;
+                padding: 14px 8px;
+            }
+            
+           .nav li a {
+                display: inline-block;
+                color: #000000;
+                text-align: center;
+                padding-bottom: 5px;
+                text-decoration: none;
+                border-bottom: 3px solid transparent;
+            }
+
+           .nav li a:hover {
+                background-color: #00FFFFFFF;
+                border-bottom: 3px solid #ffae19;
+            }
+            
+            .nav li .btn {
+                background-color: #ffae19;
+                border: 2px solid #ffae19;
+                padding: 3px 30px;
+                color: #fff;
+                transition: all 0.4s;
+            }
+            
+            .nav li .btn:hover {
+                background-color: white;
+                border: 2px solid #ffae19;
+                color: #ffae19;
+            }
+            
         </style>   
         
     </head>
+    
     <body>
         <div class="container">
-            <div class="row">
-                <h3><u><em>About our Agricultural Leadership Program</em></u></h3>
-                
-                <div class="video">
-                    <video width="400" controls>
-                        <source src="vid/AGRICULTURE.m4v" type="video/mp4">
-                        <source src="vid/AGRICULTURE.webm" type="video/webm">
-                        Your browser does not support the video tag.
-                    </video>
+            <div class="nav">
+                <ul>
+                    <li><a class="line" href="#about">About</a></li>
+                    <li><a class="line" href="#instructors">Instructors</a></li>
+                    <li><a class="line" href="#courses">Courses</a></li>
+                    <li><a href="http://itsyourchoice.ccsd.net/select-schools/" class="btn">Apply Now</a></li>     
+                </ul>
+            </div>
+            
+            <section id="about">
+                <div class="row">
+                    <h2>About our Agricultural Leadership Program</h2>
+                    
+                    <div class="video">
+                        <video width="400" controls>
+                            <source src="vid/AGRICULTURE.m4v" type="video/mp4">
+                            <source src="vid/AGRICULTURE.webm" type="video/webm">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    
+                    <p>
+                        M.A.S.A is a rigorous applied science program that instructs students about plants, 
+                        food production, floral design, greenhouse management, animals, natural resources, 
+                        nutrition and much more. Throughout the program students are also taught a wide 
+                        variety of employable skills, including but not limited to verbal and written 
+                        communications skills, leadership skills, and management/technology skills for 
+                        future internships and possible employment.
+                    </p>    
+                    
+                    <p>
+                        Agricultural Science Education uses a three-circle model of instruction. These models are classroom
+                        and laboratory instruction, and experiential learning. The successful integration of each of 
+                        these three components with the handson teaching model results in a strong program that produces
+                        well rounded individuals who are prepared to be leaders in agriculture, business, and all 
+                        professional industries.
+                    </p>               
                 </div>
-                
-                <p>
-                    Agricultural Science Education uses a three-circle model of instruction. These models are classroom and laboratory
-                    instruction, and experiential learning. The successful integration of each of these three components with the hands
-                    on teaching model results in a strong program that produces well rounded individuals who are prepared to be leaders
-                    in agriculture, business, and all professional industries.
-                </p>
-                
-                <p>
-                    M.A.S.A is a rigorous applied science program that instructs students about plants, food production, floral design,
-                    greenhouse management, animals, natural resources, nutrition and much more. Throughout the program students are also
-                    taught a wide variety of employable skills, including but not limited to verbal and written communications skills,
-                    leadership skills, and management/technology skills for future internships and possible employment.
-                </p>                
-            </div>
+            </section>
             
-            <div class="bio">
-                bio for staff
-            </div>
+            <section id="instructors">
+                <div class="bio">
+                    <h3>Jamie Barcena</h3>
+                    <p>
+                        Jamie Barcena has worked for 10+ years as an urban agricultural science instructor for several 
+                        midwest school districts.  She holds a B.S. in Agricultural Science Education and a Masters in 
+                        Educational Leadership.  Her background in agricultural includes but is not limited to 
+                        greenhouse management, floral design, animal science and food science.  She also brings 
+                        several professional skills to our Mojave students from the agricultural industry.  Jamie has 
+                        worked for companies like Continental Grain and The University of Minnesota school of 
+                        Veterinary medicine.  Her love for urban agricultural helps our students understand the 
+                        importance of where their food comes from.  In her free time Jamie enjoys watching movies, 
+                        gardening, listening to music and spending time with her husband and three children.
+                    </p>
+                </div>
+            </section>
             
-            <div class="row">
-                <h3>Agricultural Leadership</h3>
-                <div class="col-1-3">
+            <section id="courses">
+                <h2>Courses of Study</h2>
+                <div class="row">
+                    <h3>Agricultural Leadership</h3>
                     <h4>First Year: Agriculture Science 1</h4>
                     <p>
                         This one-year course introduces students to the field of agriculture science. Areas of study include animal science,
@@ -104,9 +195,8 @@
                         to society. The appropriate use of technology is an integral part of this course. This course fulfills one of the elective credits
                         required for high school graduation.
                     </p>
-                </div>
+                
                     
-                <div class="col-1-3">
                     <h4>Second Year: Agriculture Science 2</h4>
                     <p>
                         This one-year is designed for students who have successfully completed Agriculture Science I. Areas of study include
@@ -115,9 +205,7 @@
                         to society. The appropriate use of technology is an integral part of this course. This course fulfills one of the elective
                         credits required for high school graduation.
                     </p>
-                </div>
                     
-                <div class="col-1-3">
                     <h4>Third Year: Agriculture Leadership</h4>
                     <p>
                         This one-year course is designed for students who have successfully completed Agriculture Science II. Areas of study provide
@@ -126,8 +214,8 @@
                         cultures and their important contributions to society. The appropriate use of technology is an integral part of this course. This
                         course fulfills one of the elective credits required for high school graduation.
                     </p>
-                </div> 
-            </div>
+                </div>
+            </section>
         </div>
     </body>
 </html>
