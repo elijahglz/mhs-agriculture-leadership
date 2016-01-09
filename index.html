@@ -12,20 +12,27 @@
         <script src="js/main.js"></script>
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
         <style>
-             *, *:after, *:before {
+            *, *:after, *:before {
                 box-sizing: border-box;
             }
-            div.video {
-                float: right;
-                margin: 0 0 20px 20px;
+
+            h2 {
+                margin: 0.83em 0;
             }
-            
+
+            h3 {
+                margin: 1em 0;
+            }
+
+            h4 {
+                margin: 1.33em 0;
+            }
+
             .container {
                 width: 800px;
                 margin-right: auto;
                 margin-left: auto;
             }
-            
             .row:after {
                 content: "";
                 display: table;
@@ -45,8 +52,24 @@
                 width: 33.33333%;
             }
             
+            .col-2-3 {
+                width: 66.66666%;
+            }
+            
+            .col-1-2 {
+                width: 50%;
+            }
+            
             section {
                 margin-bottom: 40px;
+            }
+            
+            .pull-right {
+                float: right;
+            }
+            
+            .pull-left {
+                float: left;
             }
             
             .bio {
@@ -64,8 +87,7 @@
             
             .bio h3 {
                 margin-top: 0;
-            }  
-            
+            }
             
             .bio a {
                 color: #ffae19;
@@ -74,7 +96,43 @@
             
             .bio a:hover {
                 text-decoration: underline;
-            }  
+            }
+            
+            .icon {
+                height: 80px;
+                position: absolute;
+                top: -40px;
+                right: -40px;
+            }
+            
+            .portrait {
+                height: 120px;
+                padding-right: 20px;
+                padding-bottom: 5px;
+            }
+            
+            .media-player {
+                background: #616362;
+                border: 3px groove #ffae19;
+                padding: 10px;
+                margin-left: 20px;
+                margin-bottom: 10px;
+                position: relative;
+            }
+            
+            .media-player iframe {
+                border: none;
+                padding: 0;
+            }
+            
+            .tracks {
+                margin-top: 5px;
+            }
+            
+            .tracks img {
+                height: 80px;
+                padding-right: 8px;
+            }
             
             p {
                 margin-top: 0;
@@ -88,7 +146,19 @@
             h2 {
                 font-style: italic;
             }
-                        .nav ul {
+            
+            hr {
+                border: none;
+                height: 1px;
+                background-color: #ffae19;
+            }
+            
+            .courses h4 {
+                margin-top: 20px;
+                margin-bottom: 8px;
+            }
+
+            .nav ul {
                 list-style-type: none;
                 margin-top: 10px;
                 padding: 0;
@@ -130,8 +200,45 @@
                 color: #ffae19;
             }
             
-        </style>   
-        
+            .social-media {
+                display: inline-block;
+            }
+            
+            .social-media .media-btn {
+                border-radius: 50px;
+                display: inline-block;
+                position: relative;
+                color: white;
+                background-color:#616362;
+                width: 30px;
+                height: 30px;
+                bottom: -10px;
+            }
+            
+            .social-media .media-btn:hover {
+                background-color: #ffae19;
+                color: #fff;
+                transition: all 0.4s;
+                
+            }
+            
+            .social-media i {
+                position: absolute;
+                bottom: 3px;
+            }
+            
+            .social-media .fa-facebook {
+                left: 9px;     
+            }
+            
+            .social-media .fa-youtube {
+                left: 7px;
+            }
+            
+            .social-media .fa-instagram {
+                left: 8px;
+            }
+       </style>
     </head>
     
     <body>
@@ -149,12 +256,11 @@
                 <div class="row">
                     <h2>About our Agricultural Leadership Program</h2>
                     
-                    <div class="video">
-                        <video width="400" controls>
-                            <source src="vid/AGRICULTURE.m4v" type="video/mp4">
-                            <source src="vid/AGRICULTURE.webm" type="video/webm">
-                            Your browser does not support the video tag.
-                        </video>
+                    <div class="pull-right">
+                        <div class="media-player">
+                            <iframe name="media_player" width="396" height="230" src="vid/agriculture.html" allowFullScreen>
+                            </iframe>
+                        </div>
                     </div>
                     
                     <p>
@@ -180,6 +286,7 @@
                 <div class="bio">
                     <h3>Jamie Barcena</h3>
                     <p>
+                        <img class="pull-left portrait" src="img/barcena.jpg">
                         Jamie Barcena has worked for 10+ years as an urban agricultural science instructor for several 
                         midwest school districts.  She holds a B.S. in Agricultural Science Education and a Masters in 
                         Educational Leadership.  Her background in agricultural includes but is not limited to 
